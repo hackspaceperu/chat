@@ -1,0 +1,4 @@
+hackspace_uni_chat:
+    resource: "@HackspaceUniChatBundle/Resources/config/routing.yml"
+    prefix:   /
+

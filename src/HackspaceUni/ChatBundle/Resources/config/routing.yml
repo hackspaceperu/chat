@@ -1,0 +1,15 @@
+hackspace_uni_chat_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: HackspaceUniChatBundle:Default:index }
+
+hackspace_uni_chat_contacts:
+    pattern:  /contacts
+    defaults: { _controller: HackspaceUniChatBundle:Default:contacts }
+
+hackspace_uni_chat_legal:
+    pattern:  /legal
+    defaults: { _controller: HackspaceUniChatBundle:Default:legal }
+
+hackspace_uni_chat_chat:
+    pattern:  /chat
+    defaults: { _controller: HackspaceUniChatBundle:Default:chat }
