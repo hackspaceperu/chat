@@ -13,3 +13,7 @@ hackspace_uni_chat_legal:
 hackspace_uni_chat_chat:
     pattern:  /chat
     defaults: { _controller: HackspaceUniChatBundle:Default:chat }
+
+HackspaceUniChatBundle_usuario:
+    resource: "@HackspaceUniChatBundle/Resources/config/routing/usuario.yml"
+    prefix:   /usuario

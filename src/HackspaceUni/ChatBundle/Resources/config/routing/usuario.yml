@@ -1,0 +1,30 @@
+usuario:
+    pattern:  /
+    defaults: { _controller: "HackspaceUniChatBundle:Usuario:index" }
+
+usuario_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "HackspaceUniChatBundle:Usuario:show" }
+
+usuario_new:
+    pattern:  /new
+    defaults: { _controller: "HackspaceUniChatBundle:Usuario:new" }
+
+usuario_create:
+    pattern:  /create
+    defaults: { _controller: "HackspaceUniChatBundle:Usuario:create" }
+    requirements: { _method: post }
+
+usuario_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "HackspaceUniChatBundle:Usuario:edit" }
+
+usuario_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "HackspaceUniChatBundle:Usuario:update" }
+    requirements: { _method: post|put }
+
+usuario_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "HackspaceUniChatBundle:Usuario:delete" }
+    requirements: { _method: post|delete }
