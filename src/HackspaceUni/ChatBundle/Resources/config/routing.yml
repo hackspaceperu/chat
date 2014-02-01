@@ -17,3 +17,7 @@ hackspace_uni_chat_chat:
 HackspaceUniChatBundle_usuario:
     resource: "@HackspaceUniChatBundle/Resources/config/routing/usuario.yml"
     prefix:   /usuario
+
+HackspaceUniChatBundle_canal:
+    resource: "@HackspaceUniChatBundle/Resources/config/routing/canal.yml"
+    prefix:   /canal

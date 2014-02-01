@@ -1,0 +1,30 @@
+canal:
+    pattern:  /
+    defaults: { _controller: "HackspaceUniChatBundle:Canal:index" }
+
+canal_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "HackspaceUniChatBundle:Canal:show" }
+
+canal_new:
+    pattern:  /new
+    defaults: { _controller: "HackspaceUniChatBundle:Canal:new" }
+
+canal_create:
+    pattern:  /create
+    defaults: { _controller: "HackspaceUniChatBundle:Canal:create" }
+    requirements: { _method: post }
+
+canal_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "HackspaceUniChatBundle:Canal:edit" }
+
+canal_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "HackspaceUniChatBundle:Canal:update" }
+    requirements: { _method: post|put }
+
+canal_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "HackspaceUniChatBundle:Canal:delete" }
+    requirements: { _method: post|delete }
