@@ -36,6 +36,17 @@ class Mensaje
      */
     private $fecha;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="Usuario")
+     */
+    private $usuario;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Canal")
+     */
+    private $canal;
+
 
     /**
      * Get id
@@ -86,7 +97,7 @@ class Mensaje
     /**
      * Get fecha
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getFecha()
     {
