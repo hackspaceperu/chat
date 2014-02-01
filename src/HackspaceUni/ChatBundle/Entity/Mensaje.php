@@ -2,6 +2,7 @@
 
 namespace HackspaceUni\ChatBundle\Entity;
 
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -28,11 +29,18 @@ class Mensaje
      */
     private $mensaje;
 
+    /**
+     * @var DateTime
+     *
+     * @ORM\Column(name="fecha", type="datetime", nullable=true)
+     */
+    private $fecha;
+
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -55,10 +63,33 @@ class Mensaje
     /**
      * Get mensaje
      *
-     * @return string 
+     * @return string
      */
     public function getMensaje()
     {
         return $this->mensaje;
+    }
+
+    /**
+     * Set fecha
+     *
+     * @param \DateTime $fecha
+     * @return Mensaje
+     */
+    public function setFecha($fecha)
+    {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
+    /**
+     * Get fecha
+     *
+     * @return \DateTime 
+     */
+    public function getFecha()
+    {
+        return $this->fecha;
     }
 }
