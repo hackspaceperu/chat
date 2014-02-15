@@ -32,7 +32,9 @@ class DefaultController extends Controller
 
     public function chatAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
+        $em = $this
+            ->getDoctrine()
+            ->getManager();
 
         $mensajes = $em->getRepository('HackspaceUniChatBundle:Mensaje')->findAll();
 
